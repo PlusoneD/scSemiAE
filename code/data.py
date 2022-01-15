@@ -19,8 +19,8 @@ class Data():
 			Random seed for choosing labeled and unlabeled sets.
 		"""
 		self.seed = seed
-		self.dataset = pd.read_csv(load_path+"5000_cortex_expression_matrix.txt", sep="\t", index_col=0).sort_index()
-		self.metadata = pd.read_csv(load_path+"cortex_metadata.txt", sep="\t", index_col=0).sort_index()
+		self.dataset = pd.read_csv(load_path+"expression_matrix.txt", sep="\t", index_col=0).sort_index()
+		self.metadata = pd.read_csv(load_path+"metadata.txt", sep="\t", index_col=0).sort_index()
 		self.labeled_size = labeled_size
 		self.labeled_ratio = labeled_ratio
 
