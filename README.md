@@ -15,28 +15,24 @@ pip install git+https://github.com/PlusoneD/scSemiAE.git
 └─code                // related codes of scSemiAE
     │  data.py        //  data simulation for test
     │  run.py          //  an example
-
-​    │  dataset 
-
-​         │   expression_matrix.txt       
-
-​         └─  metadata.txt          
-
-​	└─model
-​           │   dataset.py        // dataset type for training model 
-​           │    inference.py    // classification method
-​           │   loss.py              //  loss function
-​           │    metrics.py       //  metrics calculation 
-​           │   net.py                //  model network 
-​           │   scSemiAE.py     //  model class
-​           └─  utils.py            //  some tool function
+    │  dataset 
+          │   expression_matrix.txt       
+          └─  metadata.txt          
+    └─model
+          │   dataset.py        // dataset type for training model 
+          │    inference.py    // classification method
+          │   loss.py              //  loss function
+          │    metrics.py       //  metrics calculation 
+          │   net.py                //  model network 
+          │   scSemiAE.py     //  model class
+          └─  utils.py            //  some tool function
 
 
 
 ## Usage
 
-To train a model based on a dataset, please run 'run.py'. The parameters are listed below.
-
+**To train a model based on a dataset, please run 'run.py'. The parameters are listed below.
+**
 --data_path: path to the dataset folder, default="./dataset/"
 
 --save_path: path to the output directory, default="./output/"
@@ -65,8 +61,8 @@ To train a model based on a dataset, please run 'run.py'. The parameters are lis
 
 
 
-if you don't want to change the parameter, you can only put the data (two files) into "./dataset/" and execute: 
+**if you don't want to change the parameter, you can only put the data (two files) into "./dataset/" and execute: 
 
 python run.py
 
-of note，the data need to meet some requirements such as "expression_matrix.txt" and "metadata.txt".
+of note，the data need to meet some requirements such as "expression_matrix.txt" and "metadata.txt".**
